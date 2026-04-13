@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>物理期中考重點題型解答 (第20-24章)</title>
+    <!-- MathJax 配置與載入，用於顯示數學公式 -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #f5f7fb;
+            color: #1e2a3a;
+            padding: 2rem 1rem;
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 24px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+            padding: 2rem 1.8rem;
+        }
+        h1 {
+            font-size: 1.9rem;
+            text-align: center;
+            margin-bottom: 0.25rem;
+            color: #0f3b5c;
+            border-bottom: 3px solid #3b82f6;
+            display: inline-block;
+            width: auto;
+            padding-bottom: 6px;
+        }
+        .title-wrapper {
+            text-align: center;
+            margin-bottom: 1.8rem;
+        }
+        .exam-info {
+            background: #eef2ff;
+            padding: 0.8rem 1.2rem;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+        .exam-info span {
+            font-weight: 600;
+            background: #1e3a8a;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 40px;
+            font-size: 0.85rem;
+        }
+        h2 {
+            font-size: 1.6rem;
+            margin-top: 1.8rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            display: inline-block;
+            padding: 0.2rem 1rem;
+            border-radius: 40px;
+            color: white;
+            letter-spacing: 1px;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin: 1.2rem 0 0.6rem 0;
+            padding-left: 0.5rem;
+            border-left: 5px solid #f97316;
+            color: #2c3e66;
+        }
+        .problem-card {
+            background: #fefcf5;
+            border-radius: 20px;
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 1.8rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e9ecef;
+            transition: 0.1s ease;
+        }
+        .problem-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #b45309;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 0.75rem;
+            border-bottom: 1px dashed #ffd966;
+            padding-bottom: 6px;
+        }
+        .problem-title .tag {
+            background-color: #ffedd5;
+            padding: 2px 10px;
+            border-radius: 24px;
+            font-size: 0.8rem;
+            color: #9a3412;
+        }
+        .translation {
+            background: #f1f5f9;
+            padding: 0.8rem 1rem;
+            border-radius: 16px;
+            margin: 0.8rem 0;
+            color: #0c4a6e;
+        }
+        .translation strong {
+            color: #075985;
+        }
+        .answer {
+            background: #e6f7ec;
+            padding: 0.8rem 1rem;
+            border-radius: 16px;
+            margin-top: 0.6rem;
+            border-left: 4px solid #2b9348;
+        }
+        .answer strong {
+            color: #1e6f3f;
+        }
+        .math {
+            overflow-x: auto;
+            padding: 0.2rem 0;
+        }
+        hr {
+            margin: 1rem 0;
+            border: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #ccc, transparent);
+        }
+        footer {
+            text-align: center;
+            margin-top: 2.5rem;
+            font-size: 0.75rem;
+            color: #5f6c7a;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 1.2rem;
+        }
+        @media (max-width: 640px) {
+            .container {
+                padding: 1.2rem;
+            }
+            .problem-card {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="title-wrapper">
+        <h1>⚡ 物理期中考 重點題型解析 ⚡</h1>
+    </div>
+    <div class="exam-info">
+        <div>📅 4月21日 (一) 13:20 &nbsp;|&nbsp; 📍 ATB0202</div>
+        <div>🧮 可使用計算機 &nbsp;|&nbsp; 📚 範圍：第20章 ~ 第24章</div>
+        <span>參考題型完整解答</span>
+    </div>
+
+    <!-- ========================= 第20章 ========================= -->
+    <h2>📘 第20章 電荷與電場</h2>
+    
+    <!-- 例題20.1 -->
+    <div class="problem-card">
+        <div class="problem-title"><span class="tag">例題 20.1</span> 求力：兩個電荷</div>
+        <div class="translation">
+            <strong>📖 題目翻譯：</strong><br>
+            一個 \(1.0\;\mu\text{C}\) 的電荷位於 \(x = 1.0\;\text{cm}\)，另一個 \(-1.5\;\mu\text{C}\) 的電荷位於 \(x = 3.0\;\text{cm}\)。<br>
+            正電荷對負電荷施加的力為何？若兩電荷距離變為三倍，力會如何改變？
+        </div>
+        <div class="answer">
+            <strong>✅ 精簡解答：</strong><br>
+            距離 \(r = 3.0 - 1.0 = 2.0\;\text{cm} = 0.020\;\text{m}\)。<br>
+            \[
+            \vec{F} = \frac{k q_1 q_2}{r^2} \hat{i}
+            = \frac{(9.0\times10^9)(1.0\times10^{-6})(-1.5\times10^{-6})}{(0.020)^2} \hat{i}
+            = -34\;\hat{i}\;\text{N}
+            \]<br>
+            負號表示吸引力（方向與 \(+\hat{i}\) 相反）。距離變為3倍 → 力變為 \(1/9\) → \(\vec{F} = -3.8\;\hat{i}\;\text{N}\)。
+        </div>
+    </div>
+
+    <!-- 例題20.3 -->
+    <div class="problem-card">
+        <div class="problem-title"><span class="tag">例題 20.3</span> 力與場：雷暴內部</div>
+        <div class="translation">
+            <strong>📖 題目翻譯：</strong><br>
+            一個帶電 \(10\;\mu\text{C}\) 的雨滴在 \(+x\) 方向受到 \(0.30\;\text{N}\) 的電力。<br>
+            求該處的電場。若在同一個點放一個 \(-5.0\;\mu\text{C}\) 的雨滴，它會受到多大的力？
+        </div>
+        <div class="answer">
+            <strong>✅ 精簡解答：</strong><br>
+            電場：\(\displaystyle \vec{E} = \frac{\vec{F}}{q} = \frac{0.30}{10\times10^{-6}} = 30\;\text{kN/C}\) (方向 \(+x\))。<br>
+            對 \(-5.0\;\mu\text{C}\)：\(\vec{F} = q\vec{E} = (-5.0\times10^{-6})(30\times10^3) = -0.15\;\text{N}\) (方向 \(-x\))。
+        </div>
+    </div>
+
+    <!-- 習題27 (第20章) -->
+    <div class="problem-card">
+        <div class="problem-title"><span class="tag">習題 20.27</span> 電場疊加 (圖20.28)</div>
+        <div class="translation">
+            <strong>📖 題目翻譯：</strong><br>
+            圖20.28中，點 \(P\) 位於兩個電荷的中間。兩電荷均為 \(+q = 1.0\;\mu\text{C}\)，相距 \(10\;\text{cm}\)。<br>
+            求在紙面內下列各點的電場： (a) \(P\) 點左方 \(5.0\;\text{cm}\)；(b) \(P\) 點正上方 \(5.0\;\text{cm}\)；(c) \(P\) 點本身。
+        </div>
+        <div class="answer">
+            <strong>✅ 精簡解答：</strong><br>
+            設左電荷在 \(x=0\)，右電荷在 \(x=10\;\text{cm}\)，\(P\) 在 \(x=5\;\text{cm}\)。<br>
+            (c) 在 \(P\) 點：對稱 → 電場為零。<br>
+            (a) \(P\) 左方 \(5\;\text{cm}\) 即 \(x=0\)（左電荷位置）。但題意通常指求該點總電場，左電荷自身不貢獻(距離0)，僅右電荷貢獻：<br>
+            \(r = 10\;\text{cm}=0.10\;\text{m}\)，\(E = \dfrac{kq}{r^2}= \dfrac{9\times10^9\times1.0\times10^{-6}}{0.10^2}=9\times10^5\;\text{N/C}\) 向右。<br>
+            (b) \(P\) 正上方 \(5\;\text{cm}\)：座標 \((5\;\text{cm},5\;\text{cm})\)。到兩電荷距離 \(r = \sqrt{5^2+5^2}=5\sqrt{2}\;\text{cm}=0.0707\;\text{m}\)。<br>
+            水平分量抵消，垂直分量相加：<br>
+            \(E_y = 2\cdot \dfrac{kq}{r^2}\cdot \dfrac{0.05}{r} \approx 2.55\times10^5\;\text{N/C}\) 向上。
+        </div>
+    </div>
+
+    <!-- ========================= 第21章 ========================= -->
+    <h2>📗 第21章 高斯定律</h2>
+
+    <!-- 例題21.3 -->
+    <div class="problem-card">
+        <div class="problem-title"><span class="tag">例題 21.3</span> 均勻帶電球體</div>
+        <div class="translation">
+            <strong>📖 題目翻譯：</strong><br>
+            電荷 \(Q\) 均勻分布於半徑 \(R\) 的球體內。求球外與球內的電場。
+        </div>
+        <div class="answer">
+            <strong>✅ 精簡解答：</strong><br>
+            <strong>外部</strong> (\(r\ge R\))：等同點電荷 \(E = \dfrac{1}{4\pi\epsilon_0}\dfrac{Q}{r^2}\)，徑向向外。<br>
+            <strong>內部</strong> (\(r&lt;R\))：高斯球面包圍電荷 \(Q\cdot\dfrac{r^3}{R^3}\)，<br>
+            \[
+            4\pi r^2 E = \frac{Q r^3/R^3}{\epsilon_0} \quad\Rightarrow\quad E = \frac{Q r}{4\pi\epsilon_0 R^3}
+            \]
+        </div>
+    </div>
+
+    <!-- 例題21.5 -->
+    <div class="problem-card">
+        <div class="problem-title"><span class="tag">例題 21.5</span> 空心管 (圓柱對稱)</div>
+        <div class="translation">
+            <strong>📖 題目翻譯：</strong><br>
+            一根長 \(3.0\;\text{m}\)、半徑 \(2.0\;\text{cm}\) 的薄壁管，表面均勻帶有總電荷 \(5.7\;\mu\text{C}\)。<br>
+            求距離管軸 \(1.0\;\text{cm}\) 與 \(3.0\;\text{cm}\) 處的電場（遠離兩端）。
+        </div>
+        <div class="answer">
+            <strong>✅ 精簡解答：</strong><br>
+            線電荷密度 \(\lambda = \dfrac{q}{L}= \dfrac{5.7}{3.0}=1.9\;\mu\text{C/m}\)。<br>
+            <strong>內部</strong> (\(r=1.0\;\text{cm}&lt;2.0\;\text{cm}\))：\(E=0\)。<br>
+            <strong>外部</strong> (\(r=3.0\;\text{cm}=0.03\;\text{m}\))：\(\displaystyle E = \frac{\lambda}{2\pi\epsilon_0 r}= \frac{1.9\times10^{-6}}{2\pi(8.85\times10^{-12})(0.03)}\approx 1.1\times10^6\;\text{N/C}\)。
+        </div>
+    </div>
+
+    <!-- 例題21.7 -->
+    <div class="problem-card">
+        <div class="problem-title"><span class="tag">例題 21.7</span> 空心導體與靜電屏蔽</div>
+        <div class="translation">
+            <strong>📖 題目翻譯：</strong><br>
+            不規則導體帶淨電荷 \(1\;\mu\text{C}\)，內部空腔有 \(+2\;\mu\text{C}\) 點電荷。求腔壁與導體外表面上的淨電荷量（靜電平衡下）。
+        </div>
+        <div class="answer">
+            <strong>✅ 精簡解答：</strong><br>
+            在導體內作高斯面包圍空腔，因導體內 \(E=0\)，高斯面內淨電荷為零 → 腔壁感應出 \(-2\;\mu\text{C}\)。<br>
+            導體總電荷 \(+1\;\mu\text{C}\)，故外表面電荷 \(= +1 - (-2) = +3\;\mu\text{C}\)。
+        </div>
+    </div>
+
+    <!-- ========================= 第22章 ========================= -->
+    <h2>📙 第22章 電位</h2>
+
+    <!-- 例題22.1 -->
+    <div class="problem-card">
+        <div class="problem-title"><span class="tag">例題 22.1</span> X射線管：電位差與能量</div>
+        <div class="translation">
+            <strong>📖 題目翻譯：</strong><br>
+            均勻電場 \(300\;\text{kN/C}\) 從靶指向源，距離 \(10\;\text{cm}\)。求源與靶之間的電位差，以及電子從源加速到靶獲得的能量（以 eV 和 J 表示）。
+        </div>
+        <div class="answer">
+            <strong>✅ 精簡解答：</strong><br>
+            \(\Delta V = E d = (300\times10^3)(0.10) = 30\;\text{kV}\)。<br>
+            電子能量 \(= e\Delta V = 30\;\text{keV} = 30\times10^3 \times 1.6\times10^{-19} = 4.8\times10^{-15}\;\text{J}\)。
+        </div>
+    </div>
+
+    <!-- 例題22.3 -->
+    <div class="problem-card">
+        <div class="problem-title"><span class="tag">例題 22.3</span> 范德格拉夫起電機</div>
+        <div class="translation">
+            <strong>📖 題目翻譯：</strong><br>
+            半徑 \(2.30\;\text{m}\) 的金屬球帶電 \(640\;\mu\text{C}\)。求 (a) 球面電位；(b) 將質子從無窮遠移到球面所需的功；(c) 球面與距球心 \(2R\) 處的電位差。
+        </div>
+        <div class="answer">
+            <strong>✅ 精簡解答：</strong><br>
+            (a) \(V = \dfrac{kQ}{R}= \dfrac{9\times10^9\times640\times10^{-6}}{2.30}\approx 2.50\;\text{MV}\)。<br>
+            (b) 功 \(= qV = (1.6\times10^{-19})(2.50\times10^6)=4.0\times10^{-13}\;\text{J}=2.5\;\text{MeV}\)。<br>
+            (c) \(V(2R)=\dfrac{kQ}{2R}=1.25\;\text{MV}\)，\(\Delta V = V(2R)-V(R) = -1.25\;\text{MV}\)。
+        </div>
+    </div>
+
+    <!-- 習題23 (第22章) -->
+    <div class="problem-card">
+        <div class="problem-title"><span class="tag">習題 22.23</span> 孤立金屬球與質子速度</div>
+        <div class="translation">
+            <strong>📖 題目翻譯：</strong><br>
+            直徑 \(3.8\;\text{cm}\) 的孤立金屬球帶有 \(0.89\;\mu\text{C}\) 的電荷。<br>
+            (a) 求球面的電位。(b) 若一個質子從球面靜止釋放，遠離球體時的速度為何？
+        </div>
+        <div class="answer">
+            <strong>✅ 精簡解答：</strong><br>
+            (a) \(R = 0.019\;\text{m}\)，\(V = \dfrac{kQ}{R}= \dfrac{9\times10^9\times0.89\times10^{-6}}{0.019}\approx 4.22\times10^5\;\text{V}=422\;\text{kV}\)。<br>
+            (b) 能量守恆 \(\dfrac12 m_p v^2 = qV\)，\(m_p=1.67\times10^{-27}\;\text{kg}\)，<br>
+            \(v = \sqrt{\dfrac{2qV}{m_p}} = \sqrt{\dfrac{2(1.6\times10^{-19})(4.22\times10^5)}{1.67\times10^{-27}}} \approx 2.84\times10^6\;\text{m/s}\)。
+        </div>
+    </div>
+
+    <!-- 習題27 (第22章) -->
+    <div class="problem-card">
+        <div class="problem-title"><span class="tag">習題 22.27</span> 由電位求電場</div>
+        <div class="translation">
+            <strong>📖 題目翻譯：</strong><br>
+            電位函數 \(V = 2xy - 3zx + 5y^2\) (V單位，座標米)。求點 \((3,3,1)\) 處的 (a) 電位；(b) 電場的三個分量。
+        </div>
+        <div class="answer">
+            <strong>✅ 精簡解答：</strong><br>
+            (a) \(V = 2(3)(3)-3(1)(3)+5(3)^2 = 18-9+45 = 54\;\text{V}\)。<br>
+            (b) \(\vec{E} = -\nabla V\)：<br>
+            \(E_x = -\dfrac{\partial V}{\partial x}= -(2y-3z)= -(6-3)= -3\;\text{V/m}\)；<br>
+            \(E_y = -\dfrac{\partial V}{\partial y}= -(2x+10y)= -(6+30)= -36\;\text{V/m}\)；<br>
+            \(E_z = -\dfrac{\partial V}{\partial z}= -(-3x)= 3x = 9\;\text{V/m}\)。
+        </div>
+    </div>
+
+    <!-- ========================= 第23章 ========================= -->
+    <h2>📕 第23章 電容與電能</h2>
+
+    <!-- 例題23.3 -->
+    <div class="problem-card">
+        <div class="problem-title"><span class="tag">例題 23.3</span> 電容串並聯與耐壓</div>
+        <div class="translation">
+            <strong>📖 題目翻譯：</strong><br>
+            圖23.9a中 \(C_1=12.0\;\mu\text{F}\)，\(C_2=3.0\;\mu\text{F}\)，\(C_3=1.0\;\mu\text{F}\)。<br>
+            (a) 求組合的等效電容。(b) 若 \(A,B\) 兩端加上 \(100\;\text{V}\)，則 \(C_1\) 至少需要多少耐壓？
+        </div>
+        <div class="answer">
+            <strong>✅ 精簡解答：</strong><br>
+            \(C_2\)、\(C_3\) 並聯：\(C_{23}=3+1=4\;\mu\text{F}\)；與 \(C_1\) 串聯：\(C_{123}=\dfrac{12\times4}{12+4}=3\;\mu\text{F}\)。<br>
+            總電荷 \(Q = C_{123}V = 3\times100 = 300\;\mu\text{C}\)，串聯時 \(C_1\) 帶相同電荷，<br>
+            \(V_1 = Q/C_1 = 300/12 = 25\;\text{V}\) ⇒ 耐壓至少 \(25\;\text{V}\)。
+        </div>
+    </div>
+
+    <!-- 例題23.4 -->
+    <div class="problem-card">
+        <div class="problem-title"><span class="tag">例題 23.4</span> 雷暴雲儲存電能</div>
+        <div class="translation">
+            <strong>📖 題目翻譯：</strong><br>
+            雷暴雲近似圓柱，高 \(10\;\text{km}\)，直徑 \(20\;\text{km}\)，內部均勻電場 \(10^5\;\text{V/m}\)。求雲中儲存的電能。
+        </div>
+        <div class="answer">
+            <strong>✅ 精簡解答：</strong><br>
+            能量密度 \(u = \dfrac12\epsilon_0 E^2 = 0.5\times8.85\times10^{-12}\times(10^5)^2 = 4.43\times10^{-2}\;\text{J/m}^3\)。<br>
+            體積 \(V_{\text{cyl}} = \pi r^2 h = \pi (10\times10^3)^2 (10\times10^3) = \pi\times10^{12}\;\text{m}^3 \approx 3.14\times10^{12}\;\text{m}^3\)。<br>
+            總能量 \(U = u V_{\text{cyl}} \approx 4.43\times10^{-2}\times3.14\times10^{12} \approx 1.39\times10^{11}\;\text{J} = 139\;\text{GJ}\)。
+        </div>
+    </div>
+
+    <!-- 習題11 (第23章) -->
+    <div class="problem-card">
+        <div class="problem-title"><span class="tag">習題 23.11</span> 四個點電荷的組裝功</div>
+        <div class="translation">
+            <strong>📖 題目翻譯：</strong><br>
+            四個 \(75\;\mu\text{C}\) 的電荷，原本相距很遠，被排成一條直線，相鄰間隔 \(5.0\;\text{cm}\)。求組裝這個電荷分布所需的功。
+        </div>
+        <div class="answer">
+            <strong>✅ 精簡解答：</strong><br>
+            依序從無窮遠移入：<br>
+            \(W_1=0\)；<br>
+            \(W_2 = k\dfrac{q^2}{0.05}=9\times10^9\times\dfrac{(75\times10^{-6})^2}{0.05}=1012.5\;\text{J}\)；<br>
+            \(W_3 = kq^2\left(\dfrac1{0.10}+\dfrac1{0.05}\right)=50.625\times(10+20)=1518.75\;\text{J}\)；<br>
+            \(W_4 = kq^2\left(\dfrac1{0.15}+\dfrac1{0.10}+\dfrac1{0.05}\right)=50.625\times(6.667+10+20)\approx1856.25\;\text{J}\)；<br>
+            \(W_{\text{總}} = 1012.5+1518.75+1856.25 = 4387.5\;\text{J}\approx 4.39\;\text{kJ}\)。
+        </div>
+    </div>
+
+    <!-- ========================= 第24章 ========================= -->
+    <h2>📒 第24章 電流與電阻</h2>
+
+    <!-- 例題24.1 -->
+    <div class="problem-card">
+        <div class="problem-title"><span class="tag">例題 24.1</span> 銅線中的漂移速度</div>
+        <div class="translation">
+            <strong>📖 題目翻譯：</strong><br>
+            銅線截面積 \(1.0\;\text{mm}^2\)，通過 \(5.0\;\text{A}\) 電流，電子數密度 \(n=1.1\times10^{29}\;\text{m}^{-3}\)。求電子的漂移速度。
+        </div>
+        <div class="answer">
+            <strong>✅ 精簡解答：</strong><br>
+            \[
+            v_d = \frac{I}{nAq} = \frac{5.0}{(1.1\times10^{29})(1.0\times10^{-6})(1.6\times10^{-19})}
+            = \frac{5.0}{1.76\times10^{4}} \approx 2.84\times10^{-4}\;\text{m/s} = 0.284\;\text{mm/s}
+            \]
+        </div>
+    </div>
+
+    <!-- 例題24.3 -->
+    <div class="problem-card">
+        <div class="problem-title"><span class="tag">例題 24.3</span> 家用配線內電場</div>
+        <div class="translation">
+            <strong>📖 題目翻譯：</strong><br>
+            直徑 \(2.1\;\text{mm}\) 的銅線通過 \(11\;\text{A}\) 電流。求銅線內部的電場大小（銅電阻率 \(\rho=1.68\times10^{-8}\;\Omega\cdot\text{m}\)）。
+        </div>
+        <div class="answer">
+            <strong>✅ 精簡解答：</strong><br>
+            截面積 \(A = \pi (1.05\times10^{-3})^2 = 3.46\times10^{-6}\;\text{m}^2\)，<br>
+            電流密度 \(J = I/A = 11 / 3.46\times10^{-6} = 3.18\times10^6\;\text{A/m}^2\)，<br>
+            \(E = J\rho = (3.18\times10^6)(1.68\times10^{-8}) \approx 0.0534\;\text{V/m} = 53.4\;\text{mV/m}\)。
+        </div>
+    </div>
+
+    <!-- 習題38 (第24章) -->
+    <div class="problem-card">
+        <div class="problem-title"><span class="tag">習題 24.38</span> 導線電阻與端電壓</div>
+        <div class="translation">
+            <strong>📖 題目翻譯：</strong><br>
+            長 \(1.5\;\text{m}\)、直徑 \(0.51\;\text{mm}\) 的銅線，最大額定電流 \(3.5\;\text{A}\)。已知 \(\rho=1.68\times10^{-8}\;\Omega\cdot\text{m}\)，求 (a) 電阻；(b) 通過最大額定電流時兩端電壓。
+        </div>
+        <div class="answer">
+            <strong>✅ 精簡解答：</strong><br>
+            半徑 \(r=0.255\times10^{-3}\;\text{m}\)，截面積 \(A=\pi r^2 = \pi (0.255\times10^{-3})^2 = 2.043\times10^{-7}\;\text{m}^2\)。<br>
+            (a) \(R = \rho \dfrac{L}{A} = \dfrac{1.68\times10^{-8}\times1.5}{2.043\times10^{-7}} \approx 0.1234\;\Omega\)。<br>
+            (b) \(V = IR = 3.5 \times 0.1234 \approx 0.432\;\text{V}\)。
+        </div>
+    </div>
+
+    <footer>
+        📌 整理自老師指定範圍：第20章例題1,3 / 習題27；第21章例題3,5,7；第22章例題1,3 / 習題23,27；<br>
+        第23章例題3,4 / 習題11；第24章例題1,3 / 習題38。 祝考試順利！
+    </footer>
+</div>
+</body>
+</html>
