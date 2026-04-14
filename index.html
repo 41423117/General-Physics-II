@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>物理期中考重點題型解答 (第20-24章)</title>
-    <!-- MathJax 配置與載入，用於顯示數學公式 -->
+    <title>物理期中考重點題型解答 (第20-24章)｜修正版</title>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
     <style>
         * {
@@ -86,7 +85,6 @@
             margin-bottom: 1.8rem;
             box-shadow: 0 2px 6px rgba(0,0,0,0.05);
             border: 1px solid #e9ecef;
-            transition: 0.1s ease;
         }
         .problem-title {
             font-weight: 700;
@@ -165,7 +163,7 @@
     <div class="exam-info">
         <div>📅 4月21日 (一) 13:20 &nbsp;|&nbsp; 📍 ATB0202</div>
         <div>🧮 可使用計算機 &nbsp;|&nbsp; 📚 範圍：第20章 ~ 第24章</div>
-        <span>參考題型完整解答</span>
+        <span>參考題型完整解答 (依考試範圍修正)</span>
     </div>
 
     <!-- ========================= 第20章 ========================= -->
@@ -206,23 +204,49 @@
         </div>
     </div>
 
-    <!-- 習題27 (第20章) -->
+    <!-- 習題27 (第20章) 修正為 +2.0μC 與 -2.0μC，相距5.0cm -->
     <div class="problem-card">
-        <div class="problem-title"><span class="tag">習題 20.27</span> 電場疊加 (圖20.28)</div>
+        <div class="problem-title"><span class="tag">習題 20.27</span> 電場疊加 (圖20.28) 修正版</div>
         <div class="translation">
             <strong>📖 題目翻譯：</strong><br>
-            圖20.28中，點 \(P\) 位於兩個電荷的中間。兩電荷均為 \(+q = 1.0\;\mu\text{C}\)，相距 \(10\;\text{cm}\)。<br>
-            求在紙面內下列各點的電場： (a) \(P\) 點左方 \(5.0\;\text{cm}\)；(b) \(P\) 點正上方 \(5.0\;\text{cm}\)；(c) \(P\) 點本身。
+            如圖20.28，兩電荷分別為 \(+2.0\;\mu\text{C}\) 與 \(-2.0\;\mu\text{C}\)，相距 \(5.0\;\text{cm}\)。點 \(P\) 位於兩電荷中點。<br>
+            求紙面內 (a) \(P\) 左方 \(5.0\;\text{cm}\) 處、(b) \(P\) 正上方 \(5.0\;\text{cm}\) 處、(c) \(P\) 點本身的電場。
         </div>
         <div class="answer">
             <strong>✅ 精簡解答：</strong><br>
-            設左電荷在 \(x=0\)，右電荷在 \(x=10\;\text{cm}\)，\(P\) 在 \(x=5\;\text{cm}\)。<br>
-            (c) 在 \(P\) 點：對稱 → 電場為零。<br>
-            (a) \(P\) 左方 \(5\;\text{cm}\) 即 \(x=0\)（左電荷位置）。但題意通常指求該點總電場，左電荷自身不貢獻(距離0)，僅右電荷貢獻：<br>
-            \(r = 10\;\text{cm}=0.10\;\text{m}\)，\(E = \dfrac{kq}{r^2}= \dfrac{9\times10^9\times1.0\times10^{-6}}{0.10^2}=9\times10^5\;\text{N/C}\) 向右。<br>
-            (b) \(P\) 正上方 \(5\;\text{cm}\)：座標 \((5\;\text{cm},5\;\text{cm})\)。到兩電荷距離 \(r = \sqrt{5^2+5^2}=5\sqrt{2}\;\text{cm}=0.0707\;\text{m}\)。<br>
-            水平分量抵消，垂直分量相加：<br>
-            \(E_y = 2\cdot \dfrac{kq}{r^2}\cdot \dfrac{0.05}{r} \approx 2.55\times10^5\;\text{N/C}\) 向上。
+            設 \(x\) 軸水平向右，左電荷 \(q_1 = +2.0\;\mu\text{C}\) 在 \(x = -2.5\;\text{cm}\)，右電荷 \(q_2 = -2.0\;\mu\text{C}\) 在 \(x = +2.5\;\text{cm}\)，\(P\) 在 \(x=0\)。<br>
+            \(k = 9.0\times10^9\;\text{N·m}^2/\text{C}^2\)，\(d = 5.0\;\text{cm}=0.05\;\text{m}\)，半距離 \(a = 0.025\;\text{m}\)。<br>
+            <br>
+            <strong>(c) 在 \(P\) 點：</strong> 兩電荷到 \(P\) 的距離均為 \(a=0.025\;\text{m}\)。<br>
+            \(E_1\) 方向向右 (正電荷排斥)，\(E_2\) 方向向右 (負電荷吸引)，故電場方向皆為 \(+x\)。<br>
+            \[
+            E_P = \frac{k|q_1|}{a^2} + \frac{k|q_2|}{a^2} = 2\cdot\frac{9\times10^9\times2.0\times10^{-6}}{(0.025)^2}
+            = 2\times(2.88\times10^7) = 5.76\times10^7\;\text{N/C}
+            \]
+            方向為 \(+x\) (向右)。<br>
+            <br>
+            <strong>(a) \(P\) 左方 \(5.0\;\text{cm}\)：</strong> 座標 \(x = -0.05\;\text{m}\) (即 \(P\) 往左5 cm)。<br>
+            到 \(q_1\) 的距離 \(r_1 = | -0.05 - (-0.025)| = 0.025\;\text{m}\)；到 \(q_2\) 的距離 \(r_2 = | -0.05 - 0.025| = 0.075\;\text{m}\)。<br>
+            電場向量：正電荷 \(q_1\) 在該點產生向左的場 (\(-\hat{i}\))，負電荷 \(q_2\) 產生向右的場 (\(+\hat{i}\))。<br>
+            \[
+            E_1 = \frac{k q_1}{r_1^2} = \frac{9\times10^9\times2.0\times10^{-6}}{(0.025)^2} = 2.88\times10^7\;\text{N/C}\quad (\text{向左})
+            \]
+            \[
+            E_2 = \frac{k |q_2|}{r_2^2} = \frac{9\times10^9\times2.0\times10^{-6}}{(0.075)^2} = 3.2\times10^6\;\text{N/C}\quad (\text{向右})
+            \]
+            合電場 \(E = E_1 - E_2 = 2.88\times10^7 - 3.2\times10^6 = 2.56\times10^7\;\text{N/C}\)，方向向左 (\(-x\))。<br>
+            <br>
+            <strong>(b) \(P\) 正上方 \(5.0\;\text{cm}\)：</strong> 座標 \((0, 0.05\;\text{m})\)。<br>
+            到兩電荷距離均為 \(r = \sqrt{(0.025)^2 + (0.05)^2} = \sqrt{0.000625+0.0025} = \sqrt{0.003125}=0.0559\;\text{m}\)。<br>
+            對稱性：水平分量抵消，垂直分量均向下（因 \(q_1\) 正電荷排斥 → 場方向遠離，在該點產生向下分量；\(q_2\) 負電荷吸引 → 場方向指向 \(q_2\)，也產生向下分量）。<br>
+            單一電荷場強 \(E_0 = \dfrac{k\cdot2.0\times10^{-6}}{r^2} = \dfrac{9\times10^9\times2.0\times10^{-6}}{0.003125} = 5.76\times10^6\;\text{N/C}\)。<br>
+            垂直分量因子 \(\sin\theta = \dfrac{0.05}{r} = \dfrac{0.05}{0.0559} \approx 0.894\)。<br>
+            總電場 \(E = 2 \times E_0 \times \sin\theta = 2\times5.76\times10^6\times0.894 \approx 1.03\times10^7\;\text{N/C}\)，方向垂直向下 (\(-y\))。<br>
+            <hr>
+            <strong>📌 答案整理：</strong><br>
+            (a) \(2.56\times10^7\;\text{N/C}\) 向左<br>
+            (b) \(1.03\times10^7\;\text{N/C}\) 向下<br>
+            (c) \(5.76\times10^7\;\text{N/C}\) 向右
         </div>
     </div>
 
@@ -444,7 +468,7 @@
 
     <footer>
         📌 整理自老師指定範圍：第20章例題1,3 / 習題27；第21章例題3,5,7；第22章例題1,3 / 習題23,27；<br>
-        第23章例題3,4 / 習題11；第24章例題1,3 / 習題38。 祝考試順利！
+        第23章例題3,4 / 習題11；第24章例題1,3 / 習題38。 本版本已修正習題20.27之電荷值與解答。祝考試順利！
     </footer>
 </div>
 </body>
