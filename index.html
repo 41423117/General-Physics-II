@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>物理期中考重點題型解答 (第20-24章)｜修正版</title>
+    <title>物理期中考重點題型解答 (第20-24章)</title>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
     <style>
         * {
@@ -71,13 +71,6 @@
             color: white;
             letter-spacing: 1px;
         }
-        h3 {
-            font-size: 1.3rem;
-            margin: 1.2rem 0 0.6rem 0;
-            padding-left: 0.5rem;
-            border-left: 5px solid #f97316;
-            color: #2c3e66;
-        }
         .problem-card {
             background: #fefcf5;
             border-radius: 20px;
@@ -124,6 +117,16 @@
         .answer strong {
             color: #1e6f3f;
         }
+        .sub-solution {
+            margin-top: 1rem;
+            padding-top: 0.5rem;
+            border-top: 1px solid #c8e6d9;
+        }
+        .sub-solution h4 {
+            color: #0f5c2f;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
         .math {
             overflow-x: auto;
             padding: 0.2rem 0;
@@ -163,7 +166,7 @@
     <div class="exam-info">
         <div>📅 4月21日 (一) 13:20 &nbsp;|&nbsp; 📍 ATB0202</div>
         <div>🧮 可使用計算機 &nbsp;|&nbsp; 📚 範圍：第20章 ~ 第24章</div>
-        <span>參考題型完整解答 (依考試範圍修正)</span>
+        <span>參考題型完整解答</span>
     </div>
 
     <!-- ========================= 第20章 ========================= -->
@@ -204,9 +207,9 @@
         </div>
     </div>
 
-    <!-- 習題27 (第20章) 修正為 +2.0μC 與 -2.0μC，相距5.0cm -->
+    <!-- 習題27 (第20章) 正確電荷 +2.0μC / -2.0μC -->
     <div class="problem-card">
-        <div class="problem-title"><span class="tag">習題 20.27</span> 電場疊加 (圖20.28) 修正版</div>
+        <div class="problem-title"><span class="tag">習題 20.27</span> 電場疊加 (圖20.28)</div>
         <div class="translation">
             <strong>📖 題目翻譯：</strong><br>
             如圖20.28，兩電荷分別為 \(+2.0\;\mu\text{C}\) 與 \(-2.0\;\mu\text{C}\)，相距 \(5.0\;\text{cm}\)。點 \(P\) 位於兩電荷中點。<br>
@@ -215,7 +218,7 @@
         <div class="answer">
             <strong>✅ 精簡解答：</strong><br>
             設 \(x\) 軸水平向右，左電荷 \(q_1 = +2.0\;\mu\text{C}\) 在 \(x = -2.5\;\text{cm}\)，右電荷 \(q_2 = -2.0\;\mu\text{C}\) 在 \(x = +2.5\;\text{cm}\)，\(P\) 在 \(x=0\)。<br>
-            \(k = 9.0\times10^9\;\text{N·m}^2/\text{C}^2\)，\(d = 5.0\;\text{cm}=0.05\;\text{m}\)，半距離 \(a = 0.025\;\text{m}\)。<br>
+            \(k = 9.0\times10^9\;\text{N·m}^2/\text{C}^2\)，半距離 \(a = 0.025\;\text{m}\)。<br>
             <br>
             <strong>(c) 在 \(P\) 點：</strong> 兩電荷到 \(P\) 的距離均為 \(a=0.025\;\text{m}\)。<br>
             \(E_1\) 方向向右 (正電荷排斥)，\(E_2\) 方向向右 (負電荷吸引)，故電場方向皆為 \(+x\)。<br>
@@ -332,7 +335,7 @@
         </div>
     </div>
 
-    <!-- 習題23 (第22章) -->
+    <!-- 習題23 (第22章) 正確速度 -->
     <div class="problem-card">
         <div class="problem-title"><span class="tag">習題 22.23</span> 孤立金屬球與質子速度</div>
         <div class="translation">
@@ -343,8 +346,11 @@
         <div class="answer">
             <strong>✅ 精簡解答：</strong><br>
             (a) \(R = 0.019\;\text{m}\)，\(V = \dfrac{kQ}{R}= \dfrac{9\times10^9\times0.89\times10^{-6}}{0.019}\approx 4.22\times10^5\;\text{V}=422\;\text{kV}\)。<br>
-            (b) 能量守恆 \(\dfrac12 m_p v^2 = qV\)，\(m_p=1.67\times10^{-27}\;\text{kg}\)，<br>
-            \(v = \sqrt{\dfrac{2qV}{m_p}} = \sqrt{\dfrac{2(1.6\times10^{-19})(4.22\times10^5)}{1.67\times10^{-27}}} \approx 2.84\times10^6\;\text{m/s}\)。
+            (b) 能量守恆 \(\dfrac12 m_p v^2 = qV\)，\(m_p=1.67\times10^{-27}\;\text{kg}\)，\(q = 1.6\times10^{-19}\;\text{C}\)。<br>
+            \[
+            v = \sqrt{\frac{2qV}{m_p}} = \sqrt{\frac{2(1.6\times10^{-19})(4.22\times10^5)}{1.67\times10^{-27}}}
+            = \sqrt{\frac{1.3504\times10^{-13}}{1.67\times10^{-27}}} = \sqrt{8.086\times10^{13}} \approx 9.0\times10^6\;\text{m/s}
+            \]
         </div>
     </div>
 
@@ -399,7 +405,7 @@
         </div>
     </div>
 
-    <!-- 習題11 (第23章) -->
+    <!-- 習題11 (第23章) 原有解法 + 新增配對求和法 -->
     <div class="problem-card">
         <div class="problem-title"><span class="tag">習題 23.11</span> 四個點電荷的組裝功</div>
         <div class="translation">
@@ -407,13 +413,37 @@
             四個 \(75\;\mu\text{C}\) 的電荷，原本相距很遠，被排成一條直線，相鄰間隔 \(5.0\;\text{cm}\)。求組裝這個電荷分布所需的功。
         </div>
         <div class="answer">
-            <strong>✅ 精簡解答：</strong><br>
-            依序從無窮遠移入：<br>
-            \(W_1=0\)；<br>
-            \(W_2 = k\dfrac{q^2}{0.05}=9\times10^9\times\dfrac{(75\times10^{-6})^2}{0.05}=1012.5\;\text{J}\)；<br>
-            \(W_3 = kq^2\left(\dfrac1{0.10}+\dfrac1{0.05}\right)=50.625\times(10+20)=1518.75\;\text{J}\)；<br>
-            \(W_4 = kq^2\left(\dfrac1{0.15}+\dfrac1{0.10}+\dfrac1{0.05}\right)=50.625\times(6.667+10+20)\approx1856.25\;\text{J}\)；<br>
-            \(W_{\text{總}} = 1012.5+1518.75+1856.25 = 4387.5\;\text{J}\approx 4.39\;\text{kJ}\)。
+            <strong>✅ 解法一（逐個移入法）：</strong><br>
+            依序從無窮遠移入，位置 \(x=0,\;0.05,\;0.10,\;0.15\;\text{m}\)。<br>
+            \(kq^2 = 9\times10^9 \times (75\times10^{-6})^2 = 50.625\)。<br>
+            \(W_1 = 0\)<br>
+            \(W_2 = \dfrac{kq^2}{0.05} = \dfrac{50.625}{0.05} = 1012.5\;\text{J}\)<br>
+            \(W_3 = kq^2\left(\dfrac{1}{0.10} + \dfrac{1}{0.05}\right) = 50.625\times(10+20)=1518.75\;\text{J}\)<br>
+            \(W_4 = kq^2\left(\dfrac{1}{0.15} + \dfrac{1}{0.10} + \dfrac{1}{0.05}\right) = 50.625\times(6.667+10+20)\approx 1856.25\;\text{J}\)<br>
+            \(W_{\text{總}} = 1012.5 + 1518.75 + 1856.25 = 4387.5\;\text{J} \approx 4.39\;\text{kJ}\)。
+
+            <div class="sub-solution">
+                <h4>📌 另一解法：配對求和法（直接計算系統總靜電能）</h4>
+                <p>總功等於所有電荷對之間的電位能總和，共有 \(\binom{4}{2}=6\) 對。相鄰間距 \(d=0.05\;\text{m}\)。</p>
+                <ul>
+                    <li>相鄰配對（1-2, 2-3, 3-4）：3 對，距離 \(d\)</li>
+                    <li>間隔一個（1-3, 2-4）：2 對，距離 \(2d\)</li>
+                    <li>間隔兩個（1-4）：1 對，距離 \(3d\)</li>
+                </ul>
+                \[
+                W = kq^2 \left( \frac{3}{d} + \frac{2}{2d} + \frac{1}{3d} \right)
+                = \frac{kq^2}{d} \left(3 + 1 + \frac{1}{3}\right)
+                = \frac{kq^2}{d} \cdot \frac{13}{3}
+                \]
+                代入數值：
+                \[
+                \frac{kq^2}{d} = \frac{50.625}{0.05} = 1012.5
+                \]
+                \[
+                W = 1012.5 \times \frac{13}{3} = 1012.5 \times 4.333\ldots \approx 4387.5\;\text{J} = 4.39\;\text{kJ}
+                \]
+                <p>兩種方法結果一致。</p>
+            </div>
         </div>
     </div>
 
@@ -468,7 +498,7 @@
 
     <footer>
         📌 整理自老師指定範圍：第20章例題1,3 / 習題27；第21章例題3,5,7；第22章例題1,3 / 習題23,27；<br>
-        第23章例題3,4 / 習題11；第24章例題1,3 / 習題38。 本版本已修正習題20.27之電荷值與解答。祝考試順利！
+        第23章例題3,4 / 習題11；第24章例題1,3 / 習題38。祝考試順利！
     </footer>
 </div>
 </body>
